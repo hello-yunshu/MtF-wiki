@@ -1,4 +1,4 @@
-baseURL = "https://mtf.wiki/"
+baseURL = "https://mtf.hey.run"
 title = "MtF.wiki"
 theme = ["mtfwiki-modified", "zdoc"]
 
@@ -21,7 +21,7 @@ googleAnalytics = ""
 disableKinds = ["taxonomy"]
 
 [params]
-hostName = "https://mtf.wiki"
+hostName = "https://mtf.hey.run"
 custom_css = [
   "customize.scss"
 ]

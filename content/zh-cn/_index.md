@@ -7,13 +7,19 @@ landing:
   title:
     - MtF.wiki
   text:
-    - 欢迎来到 MtF.wiki．我们试图整理汇总女性倾向跨性别的相关资料，为大家提供更好的帮助~
+    - 这是 MtF.wiki 的镜像站，会尽量更新与原站保持一致，如有问题欢迎反馈~
   titleColor:
   textColor:
   spaceBetweenTitleText: 25
   buttons:
     - link: docs
       text: 查看文档
+      color: primary
+    - link: https://mtf.wiki
+      text: 原站
+      color: primary
+    - link: https://github.com/hello-yunshu/MtF-wiki
+      text: 👉这里反馈👈
       color: primary
   #backgroundImage:
   #  src: images/Transgender_Pride_Flag.webp
