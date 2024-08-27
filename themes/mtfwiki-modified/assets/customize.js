@@ -65,9 +65,14 @@ document.addEventListener(
   "click",
   (event) => {
     // if (!event.target.classList.contains("mask")) return;
-    const photo = event.target.closest(".hidden-photo");
+    const closestElement = event.target.closest(".hidden-photo");
+    if (!closestElement) return;
+    const photo = closestElement.querySelector('img');
     if (!photo) return;
-    photo.classList.toggle("show");
+    const newSrc = photo.src.replace('mtf.hey.run', 'raw.githubusercontent.com/project-trans/MtF-wiki/master/static');
+    photo.src = newSrc;
+    window.open(newSrc);
+    // photo.classList.toggle("show");
   },
   { capture: true }
 );
