@@ -1,0 +1,23 @@
+
+@import 'duotonelight';
+@import 'dracula';
+
+@media (prefers-color-scheme: light) {
+  .theme__auto{
+    @include chroma-duotonelight;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme__auto{
+    @include chroma-dracula;
+  }
+}
+
+.theme__light {
+  @include chroma-duotonelight;
+}
+
+.theme__dark {
+  @include chroma-dracula;
+}

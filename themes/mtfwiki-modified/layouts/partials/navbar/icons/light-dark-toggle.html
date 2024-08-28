@@ -1,0 +1,37 @@
+{{ if $.Param "enableDarkMode" }}
+<button id="toggleToAuto" class="navbar__icons--icon" aria-label="Toggle to Auto mode">
+  {{ partial "svgs/dark-mode.svg" (dict "width" 20 "height" 20) }}
+</button>
+<button id="toggleToLight" class="hide" aria-label="Toggle to light mode">
+  {{ partial "svgs/light-mode.svg" (dict "width" 20 "height" 20) }}
+</button>
+<button id="toggleToDark" class="hide" aria-label="Toggle to dark mode">
+  {{ partial "svgs/auto-mode.svg" (dict "width" 20 "height" 20) }}
+</button>
+<script>
+  var theme = localStorage.getItem('theme');
+  var toggleToAutoBtn = document.getElementById('toggleToAuto');
+  var toggleToLightBtn = document.getElementById('toggleToLight');
+  var toggleToDarkBtn = document.getElementById('toggleToDark');
+
+  function updateButtonVisibility(currentMode) {
+    if (currentMode === 'auto') {
+      toggleToAutoBtn.className = 'hide';
+      toggleToLightBtn.className = 'hide';
+      toggleToDarkBtn.className = 'navbar__icons--icon';
+    } else if (currentMode === 'light') {
+      toggleToAutoBtn.className = 'navbar__icons--icon';
+      toggleToLightBtn.className = 'hide'
+      toggleToDarkBtn.className = 'hide';
+    } else if (currentMode === 'dark') {
+      toggleToAutoBtn.className = 'hide';
+      toggleToLightBtn.className = 'navbar__icons--icon';
+      toggleToDarkBtn.className = 'hide'
+    }
+  }
+
+  var storedTheme = localStorage.getItem('theme') || 'auto';
+  updateButtonVisibility(storedTheme);
+
+</script>
+{{ end }}
