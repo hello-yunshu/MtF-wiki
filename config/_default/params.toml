@@ -3,7 +3,7 @@ logoImage = "/new/mtf-wiki-long.svg"
 logoText = "MtF.wiki"
 logoType = "long" # long, short
 description = "MtF.wiki is committed to becoming a free, open, and continuously updated transgender knowledge integration site."
-themeOptions = ["light", "dark"]
+themeOptions = ["auto", "light", "dark"]
 
 #useFaviconGenerator = false # https://www.favicon-generator.org/
 

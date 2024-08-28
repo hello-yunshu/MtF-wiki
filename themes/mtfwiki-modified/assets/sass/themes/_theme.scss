@@ -1,0 +1,18 @@
+@import 'dark';
+@import 'light';
+@import 'auto';
+
+@import 'darkcode';
+@import 'lightcode';
+
+$themes: (
+  dark: $dark,
+  light: $light,
+  auto: $auto,
+);
+
+$codeblock: (
+  dark: $darkcode,
+  light: $lightcode,
+  auto: $auto,
+);
