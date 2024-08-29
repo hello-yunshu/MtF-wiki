@@ -4,6 +4,7 @@ logoText = "MtF.wiki"
 logoType = "long" # long, short
 description = "MtF.wiki is committed to becoming a free, open, and continuously updated transgender knowledge integration site."
 themeOptions = ["auto", "light", "dark"]
+themecolor = "#212121"
 
 #useFaviconGenerator = false # https://www.favicon-generator.org/
 
