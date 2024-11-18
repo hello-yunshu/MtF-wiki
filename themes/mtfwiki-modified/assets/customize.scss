@@ -270,3 +270,11 @@ div.watermark::after {
     }
   }
 }
+
+.home {
+  &__landing {
+    &--btn {
+      font-size: 1rem;
+    }
+  }
+}
